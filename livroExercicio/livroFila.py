@@ -5,12 +5,6 @@ class livroFila:
     def __init__(self):
         self.fila = Queue()
         self.livros = Livro()
-        
-print("*** Criando uma fila")
-fila = Queue()
-
-print("*** Está vazia?", fila.is_empty())
-print(fila)
 
 def adicionar_livro(self, livro):
         if not isinstance(livro, Livro):
@@ -18,10 +12,17 @@ def adicionar_livro(self, livro):
         self.fila.enqueue(livro)
         print("Adicionando ", livro)
  
-#print("*** Adicionando elementos à fila")
-#fila.enqueue("Dovahkiin", 385)
-#fila.enqueue("O Senhor dos Anéis", 1178)
-#fila.enqueue("Harry Potter e a Pedra Filosofal", 223)
-#print(fila)
-
+def marcarLivroLido(self):
+        if self.fila.is_empty():
+            print("Não há livros na fila para marcar como lido.")
+            return
+        livro_lido = self.fila.dequeue()
+        print("Livro marcado como lido: ", livro_lido)
+def mostraLivros(self):
+        if self.fila.is_empty():
+            print("Não há livros na fila.")
+            return
+        print("Livros na fila:")
+        for livro in self.fila._itens:
+            print(livro)
 
