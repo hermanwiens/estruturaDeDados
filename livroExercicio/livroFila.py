@@ -4,7 +4,7 @@ from Livro import Livro
 class livroFila:
     def __init__(self):
         self.fila = Queue()
-        self.livros = Livro()
+        self.livros_lidos = []
 
 def adicionar_livro(self, livro):
         if not isinstance(livro, Livro):
