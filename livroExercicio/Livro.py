@@ -3,19 +3,21 @@ class Livro:
         self.titulo = titulo
         self.autor = autor
         self.ano_publicacao = ano_publicacao
-        self.paginas = paginas
+        self._qtd_paginas = qtd_paginas
 
     def getTitulo(self):
         return self.titulo
-        
+
     def getAutor(self):
         return self.autor   
 
     def getAnoPublicacao(self):
         return self.ano_publicacao
     
-    def getPaginas(self):
-        return self.paginas
+    def getQtdPaginas(self):
+        return self._qtd_paginas
     
     def __str__(self):
-        return f"{self.titulo} - {self.autor} ({self.ano_publicacao})"
+        return f"Livro: {self.titulo}, Autor: {self.autor}, Ano de Publicação: {self.ano_publicacao}, Quantidade de Páginas: {self._qtd_paginas}"
+        
+        
