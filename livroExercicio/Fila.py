@@ -22,5 +22,6 @@ class Queue:
             return self._itens[0]
         else:
             raise IndexError("A fila está vazia.")
+    
     def __str__(self):
         return str(self._itens)
